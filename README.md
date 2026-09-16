@@ -1,27 +1,29 @@
-# Personal Page & Live Clock
+# 個人專屬主頁與即時時鐘 (Personal Page & Live Clock)
 
-A personal homepage and portfolio featuring live real-time clock synchronization, dynamic greeting, customizable profile, skills, and projects.
+一個現代化、優雅且具備高精度即時時鐘同步的個人品牌主頁與作品集網頁。
 
-## 🚀 Features
+## 🚀 核心特色
 
-- **Live Precision Clock**: Real-time synchronized digital clock ticking every second with hours, minutes, and seconds.
-- **Dynamic Time Greeting**: Automatically adjusts greeting based on the hour of the day (*Good morning*, *Good afternoon*, *Good evening*, *Good night*).
-- **Timezone & Date**: Displays the day, month, date, year, and detected local timezone.
-- **12H / 24H Toggle**: Seamlessly switch between standard 12-hour (with AM/PM badge) and 24-hour formats.
-- **Dark / Light Theme**: Built-in sleek dark and light mode toggle.
-- **In-Browser Profile Customizer**: Click **"Customize Profile"** to edit Name, Role, Bio, Location, and Email in real-time with automatic `localStorage` persistence.
-- **Zero Dependencies**: Pure HTML, CSS, and vanilla JavaScript in a lightweight, responsive structure.
+- **精準即時時鐘**：秒級動態更新時鐘，支援 12 小時制（含上午/下午標籤）與 24 小時制切換。
+- **動態時間問候**：根據當前時間自動顯示相應問候語（早安、午安、下午好、晚安、夜深了）。
+- **完整日期與時區**：自動偵測所在地時區，顯示中文年、月、日與星期。
+- **即時自訂個人資訊**：點擊「自訂個人資訊」按鈕，即可在彈出視窗中自訂您的姓名、職稱、簡介、所在地及 Email，資料自動儲存於瀏覽器 `localStorage`。
+- **深色 / 淺色主題切換**：隨心切換舒適的深色沉浸式科技風格或清新淺色模式。
+- **純原生輕量無依賴**：純 HTML5、CSS3 與原生 JavaScript，可直接在任何瀏覽器中按兩下開啟，載入零延遲。
 
-## 💻 Quick Start
+## 💻 快速開始
 
-Simply open `index.html` in any modern web browser:
+直接在瀏覽器開啟 `index.html`：
 
 ```bash
-# On Windows
+# Windows
 start index.html
 ```
 
-Or deploy to **GitHub Pages**:
-1. Go to repository **Settings** > **Pages**.
-2. Under **Build and deployment**, select `main` branch and `/ (root)` folder.
-3. Click **Save** to publish your personal site live on the web!
+## 🌐 部署至 GitHub Pages
+
+若要透過 GitHub 免費發布上線：
+1. 前往儲存庫 **Settings** > **Pages**。
+2. 在 **Build and deployment** 下，來源選擇 `Deploy from a branch`。
+3. 分支選擇 `main`，資料夾選擇 `/ (root)`，點擊 **Save**。
+4. 稍等約 1 分鐘即可透過 `https://timko1018.github.io/0916/` 在全球瀏覽您的個人主頁！

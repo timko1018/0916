@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Personal Portfolio & Homepage</title>
+  <title>Tim Ko | 個人主頁與即時時鐘</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
   <style>
     :root {
       --bg-primary: #090d16;
@@ -64,10 +64,10 @@
     }
 
     body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-family: 'Noto Sans TC', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
       background-color: var(--bg-primary);
       color: var(--text-main);
-      line-height: 1.6;
+      line-height: 1.7;
       min-height: 100vh;
       overflow-x: hidden;
       position: relative;
@@ -238,7 +238,7 @@
       margin-bottom: 20px;
     }
     .hero-greeting {
-      font-size: 1.25rem;
+      font-size: 1.2rem;
       font-weight: 600;
       color: var(--text-muted);
       margin-bottom: 8px;
@@ -246,8 +246,8 @@
     .hero-title {
       font-size: 3.4rem;
       font-weight: 800;
-      line-height: 1.15;
-      letter-spacing: -0.03em;
+      line-height: 1.2;
+      letter-spacing: -0.02em;
       margin-bottom: 16px;
     }
     .hero-name-gradient {
@@ -257,15 +257,15 @@
       display: inline-block;
     }
     .hero-role {
-      font-size: 1.4rem;
+      font-size: 1.35rem;
       font-weight: 600;
       color: var(--text-muted);
       margin-bottom: 20px;
     }
     .hero-bio {
-      font-size: 1.1rem;
+      font-size: 1.05rem;
       color: var(--text-muted);
-      line-height: 1.7;
+      line-height: 1.8;
       max-width: 540px;
       margin-bottom: 32px;
     }
@@ -279,13 +279,14 @@
       align-items: center;
       gap: 10px;
       padding: 12px 24px;
-      font-size: 1rem;
+      font-size: 0.98rem;
       font-weight: 600;
       border-radius: 12px;
       text-decoration: none;
       cursor: pointer;
       transition: all 0.25s ease;
       border: none;
+      font-family: inherit;
     }
     .btn-primary {
       background: var(--gradient-primary);
@@ -327,8 +328,8 @@
     }
     .time-card-title {
       font-size: 0.85rem;
-      font-weight: 600;
-      letter-spacing: 0.08em;
+      font-weight: 700;
+      letter-spacing: 0.06em;
       text-transform: uppercase;
       color: var(--text-muted);
     }
@@ -348,6 +349,7 @@
       font-weight: 600;
       border-radius: 6px;
       cursor: pointer;
+      font-family: inherit;
     }
     .format-btn.active {
       background: var(--primary);
@@ -392,7 +394,6 @@
     .time-detail-label {
       font-size: 0.75rem;
       color: var(--text-dim);
-      text-transform: uppercase;
       font-weight: 600;
       margin-bottom: 4px;
     }
@@ -400,7 +401,7 @@
       font-size: 0.95rem;
       font-weight: 600;
       color: var(--text-main);
-      font-family: 'JetBrains Mono', monospace;
+      font-family: 'JetBrains Mono', 'Noto Sans TC', monospace;
     }
 
     /* Section Styling */
@@ -409,7 +410,7 @@
     }
     .section-header {
       text-align: center;
-      max-width: 600px;
+      max-width: 620px;
       margin: 0 auto 50px;
     }
     .section-tag {
@@ -448,7 +449,7 @@
       font-size: 1.05rem;
       color: var(--text-muted);
       margin-bottom: 24px;
-      line-height: 1.75;
+      line-height: 1.8;
     }
     .stats-grid {
       display: grid;
@@ -470,7 +471,7 @@
       font-family: 'JetBrains Mono', monospace;
     }
     .stat-label {
-      font-size: 0.8rem;
+      font-size: 0.82rem;
       color: var(--text-dim);
       font-weight: 500;
       margin-top: 4px;
@@ -561,7 +562,7 @@
     .project-desc {
       color: var(--text-muted);
       font-size: 0.95rem;
-      line-height: 1.6;
+      line-height: 1.7;
       margin-bottom: 20px;
     }
     .project-tags {
@@ -817,25 +818,25 @@
   <nav class="navbar">
     <div class="container nav-inner">
       <a href="#" class="nav-brand">
-        <div class="brand-avatar-mini" id="brandInitial">Y</div>
-        <span id="brandNameDisplay">Your Name</span>
+        <div class="brand-avatar-mini" id="brandInitial">T</div>
+        <span id="brandNameDisplay">Tim Ko</span>
       </a>
 
       <ul class="nav-links">
-        <li><a href="#about" class="nav-link">About</a></li>
-        <li><a href="#skills" class="nav-link">Skills</a></li>
-        <li><a href="#projects" class="nav-link">Projects</a></li>
-        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="#about" class="nav-link">關於我</a></li>
+        <li><a href="#skills" class="nav-link">專業技能</a></li>
+        <li><a href="#projects" class="nav-link">精選作品</a></li>
+        <li><a href="#contact" class="nav-link">聯絡我</a></li>
       </ul>
 
       <div class="nav-actions">
         <!-- Live Mini Clock Pill in Nav -->
-        <div class="nav-clock-pill" title="Live Local Time">
+        <div class="nav-clock-pill" title="即時在地時間">
           <span class="status-dot"></span>
           <span id="navTimeDigits">00:00:00</span>
         </div>
-        <button id="themeBtn" class="btn-icon" title="Toggle Dark/Light Mode">🌙</button>
-        <button id="openEditModalBtn" class="btn-icon" title="Edit Profile Details">✏️</button>
+        <button id="themeBtn" class="btn-icon" title="切換深色 / 淺色模式">🌙</button>
+        <button id="openEditModalBtn" class="btn-icon" title="自訂個人資料">✏️</button>
       </div>
     </div>
   </nav>
@@ -846,54 +847,54 @@
       <div class="hero-content">
         <div class="hero-badge">
           <span>👋</span>
-          <span id="heroStatusText">Available for new opportunities</span>
+          <span id="heroStatusText">隨時歡迎新的合作機會</span>
         </div>
-        <div class="hero-greeting" id="heroGreeting">Good morning, welcome to my page</div>
+        <div class="hero-greeting" id="heroGreeting">早安，歡迎來到我的個人主頁</div>
         <h1 class="hero-title">
-          Hi, I'm <span class="hero-name-gradient" id="heroName">Your Name</span>
+          嗨，我是 <span class="hero-name-gradient" id="heroName">Tim Ko</span>
         </h1>
-        <h2 class="hero-role" id="heroRole">Creative Developer & Problem Solver</h2>
+        <h2 class="hero-role" id="heroRole">全端開發者 & 數位體驗創造者</h2>
         <p class="hero-bio" id="heroBio">
-          Passionate about building modern web applications, crafting intuitive digital experiences, and exploring emerging technologies. Welcome to my personal page and live portfolio.
+          熱衷於現代網頁技術開發、打造直覺流暢的數位體驗，並持續探索新興科技。歡迎來到我的個人主頁與即時作品集。
         </p>
         <div class="hero-actions">
-          <a href="#contact" class="btn btn-primary">Get In Touch</a>
-          <button id="btnEditProfileHero" class="btn btn-outline">✏️ Customize Profile</button>
+          <a href="#contact" class="btn btn-primary">立即聯絡</a>
+          <button id="btnEditProfileHero" class="btn btn-outline">✏️ 自訂個人資訊</button>
         </div>
       </div>
 
       <!-- Live Clock & Status Card -->
       <div class="time-card">
         <div class="time-card-header">
-          <div class="time-card-title">Live Local Time & Status</div>
+          <div class="time-card-title">在地時間與即時狀態</div>
           <div class="format-toggle" id="formatToggleGroup">
-            <button class="format-btn active" data-fmt="12">12H</button>
-            <button class="format-btn" data-fmt="24">24H</button>
+            <button class="format-btn active" data-fmt="12">12小時制</button>
+            <button class="format-btn" data-fmt="24">24小時制</button>
           </div>
         </div>
 
         <div class="time-display-main">
           <span id="heroTimeDigits">00:00:00</span>
-          <span id="heroAmPm" class="time-ampm">AM</span>
+          <span id="heroAmPm" class="time-ampm">上午</span>
         </div>
-        <div class="date-display-main" id="heroDateDisplay">Wednesday, September 16, 2026</div>
+        <div class="date-display-main" id="heroDateDisplay">2026年9月16日 星期三</div>
 
         <div class="time-details-grid">
           <div class="time-detail-item">
-            <div class="time-detail-label">Timezone</div>
-            <div class="time-detail-val" id="detailTimezone">UTC+8</div>
+            <div class="time-detail-label">時區</div>
+            <div class="time-detail-val" id="detailTimezone">Asia/Taipei (UTC+8)</div>
           </div>
           <div class="time-detail-item">
-            <div class="time-detail-label">Current Status</div>
-            <div class="time-detail-val" style="color: #10b981;">Online ● Active</div>
+            <div class="time-detail-label">目前狀態</div>
+            <div class="time-detail-val" style="color: #10b981;">線上 ● 活躍中</div>
           </div>
           <div class="time-detail-item">
-            <div class="time-detail-label">Location</div>
-            <div class="time-detail-val" id="detailLocation">Taipei, TW</div>
+            <div class="time-detail-label">所在地</div>
+            <div class="time-detail-val" id="detailLocation">台灣 台北</div>
           </div>
           <div class="time-detail-item">
-            <div class="time-detail-label">System Time</div>
-            <div class="time-detail-val" id="detailEpoch">Synchronized</div>
+            <div class="time-detail-label">時鐘狀態</div>
+            <div class="time-detail-val" id="detailEpoch">精準同步中</div>
           </div>
         </div>
       </div>
@@ -904,17 +905,17 @@
       <div class="container">
         <div class="section-header">
           <div class="section-tag">About Me</div>
-          <h2 class="section-title">A Bit About Who I Am</h2>
-          <p class="section-desc">Turning complex challenges into elegant, clean, and reliable solutions.</p>
+          <h2 class="section-title">關於我的背景與理念</h2>
+          <p class="section-desc">化繁為簡，專注於打造優雅、高效且可靠的數位解決方案。</p>
         </div>
 
         <div class="about-grid">
           <div class="about-card">
             <p class="about-text" id="aboutLongBio">
-              Hello! I'm a developer who enjoys creating software that makes a real impact. Whether it's designing clean user interfaces, architecting resilient backend systems, or experimenting with modern frameworks, I focus on performance, aesthetics, and user experience.
+              你好！我是一名熱愛以軟體創造價值的開發者。無論是打造清晰直觀的使用者介面、設計穩定具擴展性的後端系統，或是實踐創新的現代前端技術，我都全心投入於效能、美感與使用者體驗的極致追求。
             </p>
             <p class="about-text">
-              When I'm not writing code, you can find me exploring new technologies, reading tech literature, and continuously refining my craft.
+              在寫程式之餘，我喜歡探索前沿科技、研讀技術文章，並持續精進自己的專業能力與設計思維。
             </p>
           </div>
 
@@ -922,24 +923,24 @@
             <div class="stats-grid">
               <div class="stat-box">
                 <div class="stat-number">5+</div>
-                <div class="stat-label">Years of Experience</div>
+                <div class="stat-label">年開發經驗</div>
               </div>
               <div class="stat-box">
                 <div class="stat-number">30+</div>
-                <div class="stat-label">Projects Built</div>
+                <div class="stat-label">專案完成</div>
               </div>
               <div class="stat-box">
                 <div class="stat-number">100%</div>
-                <div class="stat-label">Dedication</div>
+                <div class="stat-label">專注熱忱</div>
               </div>
             </div>
 
             <div class="about-card" style="margin-top: 20px;">
-              <h3 style="font-size: 1.15rem; margin-bottom: 12px; font-weight: 700;">Core Values</h3>
+              <h3 style="font-size: 1.15rem; margin-bottom: 12px; font-weight: 700;">核心價值</h3>
               <ul style="list-style: none; display: flex; flex-direction: column; gap: 8px; font-size: 0.95rem; color: var(--text-muted);">
-                <li>✨ <strong>Clean Code:</strong> Maintainable, readable, and well-structured.</li>
-                <li>🚀 <strong>Performance:</strong> Fast loading, lightweight, and optimized.</li>
-                <li>🎯 <strong>User-Centric:</strong> Thoughtful design and smooth user experience.</li>
+                <li>✨ <strong>優質程式碼：</strong>易維護、高可讀性且結構嚴謹。</li>
+                <li>🚀 <strong>極致效能：</strong>快速載入、輕量化架構與高響應度。</li>
+                <li>🎯 <strong>以使用者為本：</strong>細膩動線規劃與舒適的視覺體驗。</li>
               </ul>
             </div>
           </div>
@@ -951,15 +952,15 @@
     <section id="skills" style="background: var(--bg-secondary);">
       <div class="container">
         <div class="section-header">
-          <div class="section-tag">Expertise</div>
-          <h2 class="section-title">Skills & Capabilities</h2>
-          <p class="section-desc">Technologies and domains I work with regularly.</p>
+          <div class="section-tag">Skills</div>
+          <h2 class="section-title">專業技術與工具</h2>
+          <p class="section-desc">我日常工作與開發中所精通的技術領域。</p>
         </div>
 
         <div class="skills-grid">
           <div class="skill-card">
             <div class="skill-card-icon">💻</div>
-            <h3 class="skill-card-title">Frontend Development</h3>
+            <h3 class="skill-card-title">前端開發</h3>
             <div class="skill-tags">
               <span class="skill-tag">HTML5 / CSS3</span>
               <span class="skill-tag">JavaScript (ES6+)</span>
@@ -971,7 +972,7 @@
 
           <div class="skill-card">
             <div class="skill-card-icon">⚙️</div>
-            <h3 class="skill-card-title">Backend & APIs</h3>
+            <h3 class="skill-card-title">後端與 API</h3>
             <div class="skill-tags">
               <span class="skill-tag">Node.js</span>
               <span class="skill-tag">Python</span>
@@ -983,24 +984,24 @@
 
           <div class="skill-card">
             <div class="skill-card-icon">🗄️</div>
-            <h3 class="skill-card-title">Databases & Cloud</h3>
+            <h3 class="skill-card-title">資料庫與雲端架構</h3>
             <div class="skill-tags">
               <span class="skill-tag">PostgreSQL</span>
               <span class="skill-tag">MongoDB</span>
               <span class="skill-tag">Redis</span>
               <span class="skill-tag">Docker</span>
-              <span class="skill-tag">Git & CI/CD</span>
+              <span class="skill-tag">Git / CI/CD</span>
             </div>
           </div>
 
           <div class="skill-card">
             <div class="skill-card-icon">🎨</div>
-            <h3 class="skill-card-title">UI/UX & Design</h3>
+            <h3 class="skill-card-title">UI/UX 與介面設計</h3>
             <div class="skill-tags">
               <span class="skill-tag">Figma</span>
-              <span class="skill-tag">Responsive Design</span>
-              <span class="skill-tag">Accessibility (a11y)</span>
-              <span class="skill-tag">Design Systems</span>
+              <span class="skill-tag">響應式 RWD</span>
+              <span class="skill-tag">無障礙設計 (a11y)</span>
+              <span class="skill-tag">設計系統</span>
             </div>
           </div>
         </div>
@@ -1012,60 +1013,60 @@
       <div class="container">
         <div class="section-header">
           <div class="section-tag">Portfolio</div>
-          <h2 class="section-title">Featured Projects</h2>
-          <p class="section-desc">A selection of recent projects and digital products.</p>
+          <h2 class="section-title">精選專案展示</h2>
+          <p class="section-desc">近期打造的數位產品與精選作品。</p>
         </div>
 
         <div class="projects-grid">
           <div class="project-card">
             <div>
               <div class="project-header">
-                <span class="project-badge">Web App</span>
+                <span class="project-badge">Web 應用</span>
                 <span style="font-size: 1.2rem;">🚀</span>
               </div>
-              <h3 class="project-title">Dynamic Time Dashboard</h3>
-              <p class="project-desc">A modern personal dashboard featuring live precision time synchronization, customizable layout, and theme personalization.</p>
+              <h3 class="project-title">動態即時儀表板</h3>
+              <p class="project-desc">具備高精度秒級時鐘同步、動態問候語、響應式面板與個人化主題切換的現代化儀表板。</p>
               <div class="project-tags">
                 <span class="project-tag">JavaScript</span>
                 <span class="project-tag">HTML5</span>
                 <span class="project-tag">CSS Grid</span>
               </div>
             </div>
-            <a href="#" class="project-link">View Project Details →</a>
+            <a href="#" class="project-link">查看專案細節 →</a>
           </div>
 
           <div class="project-card">
             <div>
               <div class="project-header">
-                <span class="project-badge">Full Stack</span>
+                <span class="project-badge">全端系統</span>
                 <span style="font-size: 1.2rem;">⚡</span>
               </div>
-              <h3 class="project-title">Cloud Productivity Suite</h3>
-              <p class="project-desc">A collaborative workspace tool with real-time syncing, markdown note taking, and project task management.</p>
+              <h3 class="project-title">雲端協同生產力平台</h3>
+              <p class="project-desc">支援即時協作同步、Markdown 筆記撰寫與專案看板管理的現代化團隊協作工具。</p>
               <div class="project-tags">
                 <span class="project-tag">React</span>
                 <span class="project-tag">Node.js</span>
                 <span class="project-tag">WebSockets</span>
               </div>
             </div>
-            <a href="#" class="project-link">View Project Details →</a>
+            <a href="#" class="project-link">查看專案細節 →</a>
           </div>
 
           <div class="project-card">
             <div>
               <div class="project-header">
-                <span class="project-badge">Data Science</span>
+                <span class="project-badge">資料科學</span>
                 <span style="font-size: 1.2rem;">📊</span>
               </div>
-              <h3 class="project-title">Analytics Visualization Engine</h3>
-              <p class="project-desc">Interactive dashboard and reporting tool designed to parse complex telemetry and data pipelines into readable metrics.</p>
+              <h3 class="project-title">數據視覺化分析引擎</h3>
+              <p class="project-desc">解析複雜資料管線與指標遙測，將深奧數據轉化為直覺圖表的高效能分析看板。</p>
               <div class="project-tags">
                 <span class="project-tag">Python</span>
                 <span class="project-tag">D3.js</span>
                 <span class="project-tag">FastAPI</span>
               </div>
             </div>
-            <a href="#" class="project-link">View Project Details →</a>
+            <a href="#" class="project-link">查看專案細節 →</a>
           </div>
         </div>
       </div>
@@ -1075,38 +1076,38 @@
     <section id="contact" style="background: var(--bg-secondary);">
       <div class="container">
         <div class="section-header">
-          <div class="section-tag">Get in Touch</div>
-          <h2 class="section-title">Let's Connect</h2>
-          <p class="section-desc">Have a question, collaboration idea, or project in mind?</p>
+          <div class="section-tag">Contact</div>
+          <h2 class="section-title">與我取得聯絡</h2>
+          <p class="section-desc">若有任何合作想法、技術交流或專案諮詢，歡迎隨時聯絡！</p>
         </div>
 
         <div class="contact-container">
           <div class="contact-info">
-            <h3 class="contact-info-title">Say Hello!</h3>
+            <h3 class="contact-info-title">歡迎來信交流！</h3>
             <p class="contact-info-desc">
-              Feel free to reach out directly via email or connect on social platforms. I'm always open to discussing new ideas, tech stacks, or opportunities.
+              您可以直接透過電子郵件或社群平台與我聯繫，我非常樂意討論新點子、技術專案或任何潛在的合作機會。
             </p>
 
             <div class="contact-items">
               <div class="contact-item">
                 <div class="contact-icon">📧</div>
                 <div>
-                  <div class="contact-label">Email</div>
-                  <div class="contact-val" id="displayEmail">hello@example.com</div>
+                  <div class="contact-label">電子信箱</div>
+                  <div class="contact-val" id="displayEmail">timko1018@gmail.com</div>
                 </div>
               </div>
               <div class="contact-item">
                 <div class="contact-icon">📍</div>
                 <div>
-                  <div class="contact-label">Location</div>
-                  <div class="contact-val" id="displayLocation">Taipei, Taiwan</div>
+                  <div class="contact-label">所在地</div>
+                  <div class="contact-val" id="displayLocation">台灣 台北</div>
                 </div>
               </div>
               <div class="contact-item">
                 <div class="contact-icon">🌐</div>
                 <div>
-                  <div class="contact-label">Online Status</div>
-                  <div class="contact-val" style="color: #10b981;">Available for hire</div>
+                  <div class="contact-label">工作狀態</div>
+                  <div class="contact-val" style="color: #10b981;">可承接新專案 / 合作</div>
                 </div>
               </div>
             </div>
@@ -1115,18 +1116,18 @@
           <!-- Contact Form -->
           <form class="contact-form" id="contactForm">
             <div class="form-group">
-              <label class="form-label" for="formSenderName">Your Name</label>
-              <input type="text" id="formSenderName" class="form-input" placeholder="e.g. Jane Doe" required />
+              <label class="form-label" for="formSenderName">您的姓名</label>
+              <input type="text" id="formSenderName" class="form-input" placeholder="例如：王小明" required />
             </div>
             <div class="form-group">
-              <label class="form-label" for="formSenderEmail">Your Email</label>
-              <input type="email" id="formSenderEmail" class="form-input" placeholder="e.g. jane@example.com" required />
+              <label class="form-label" for="formSenderEmail">您的電子信箱</label>
+              <input type="email" id="formSenderEmail" class="form-input" placeholder="例如：user@example.com" required />
             </div>
             <div class="form-group">
-              <label class="form-label" for="formSenderMsg">Your Message</label>
-              <textarea id="formSenderMsg" class="form-textarea" placeholder="Write your message here..." required></textarea>
+              <label class="form-label" for="formSenderMsg">您的訊息內容</label>
+              <textarea id="formSenderMsg" class="form-textarea" placeholder="請在此輸入您想說的話..." required></textarea>
             </div>
-            <button type="submit" class="btn btn-primary" style="justify-content: center;">Send Message</button>
+            <button type="submit" class="btn btn-primary" style="justify-content: center;">送出訊息</button>
           </form>
         </div>
       </div>
@@ -1137,10 +1138,10 @@
   <footer>
     <div class="container footer-inner">
       <div>
-        © <span id="footerYear">2026</span> <span id="footerName">Your Name</span>. All rights reserved.
+        © <span id="footerYear">2026</span> <span id="footerName">Tim Ko</span>. 版權所有。
       </div>
       <div>
-        Current Local Time: <span id="footerTimeDigits" style="font-family: 'JetBrains Mono', monospace; font-weight: 600;">00:00:00</span>
+        在地即時時間：<span id="footerTimeDigits" style="font-family: 'JetBrains Mono', monospace; font-weight: 600;">00:00:00</span>
       </div>
     </div>
   </footer>
@@ -1149,54 +1150,54 @@
   <div class="modal-backdrop" id="editProfileModal">
     <div class="modal-window">
       <div class="modal-header">
-        <h3 class="modal-title">Customize Personal Info</h3>
+        <h3 class="modal-title">自訂個人資訊</h3>
         <button class="modal-close" id="btnCloseModal">✕</button>
       </div>
       <form class="modal-form" id="profileEditForm">
         <div class="form-group">
-          <label class="form-label" for="inputModalName">Your Full Name</label>
-          <input type="text" id="inputModalName" class="form-input" required maxlength="50" placeholder="e.g. Alex Chen" />
+          <label class="form-label" for="inputModalName">您的姓名</label>
+          <input type="text" id="inputModalName" class="form-input" required maxlength="50" placeholder="例如：Tim Ko" />
         </div>
         <div class="form-group">
-          <label class="form-label" for="inputModalRole">Your Professional Role / Title</label>
-          <input type="text" id="inputModalRole" class="form-input" required maxlength="60" placeholder="e.g. Software Engineer & Designer" />
+          <label class="form-label" for="inputModalRole">專業職稱 / 頭銜</label>
+          <input type="text" id="inputModalRole" class="form-input" required maxlength="60" placeholder="例如：全端開發者 & 軟體工程師" />
         </div>
         <div class="form-group">
-          <label class="form-label" for="inputModalBio">Short Bio / Tagline</label>
-          <textarea id="inputModalBio" class="form-textarea" rows="3" placeholder="Tell visitors about your passions and focus..."></textarea>
+          <label class="form-label" for="inputModalBio">簡短自介</label>
+          <textarea id="inputModalBio" class="form-textarea" rows="3" placeholder="向訪客介紹您的專業特長與熱情..."></textarea>
         </div>
         <div class="form-group">
-          <label class="form-label" for="inputModalLocation">Location</label>
-          <input type="text" id="inputModalLocation" class="form-input" placeholder="e.g. Taipei, Taiwan" />
+          <label class="form-label" for="inputModalLocation">所在地</label>
+          <input type="text" id="inputModalLocation" class="form-input" placeholder="例如：台灣 台北" />
         </div>
         <div class="form-group">
-          <label class="form-label" for="inputModalEmail">Contact Email</label>
-          <input type="email" id="inputModalEmail" class="form-input" placeholder="e.g. alex@example.com" />
+          <label class="form-label" for="inputModalEmail">聯絡 Email</label>
+          <input type="email" id="inputModalEmail" class="form-input" placeholder="例如：timko1018@gmail.com" />
         </div>
         <div style="display: flex; gap: 12px; margin-top: 8px;">
-          <button type="submit" class="btn btn-primary" style="flex: 1; justify-content: center;">Save Changes</button>
-          <button type="button" class="btn btn-outline" id="btnResetProfile">Reset</button>
+          <button type="submit" class="btn btn-primary" style="flex: 1; justify-content: center;">儲存設定</button>
+          <button type="button" class="btn btn-outline" id="btnResetProfile">恢復預設</button>
         </div>
       </form>
     </div>
   </div>
 
   <!-- Toast Notification -->
-  <div class="toast" id="toastNotification">Settings Saved!</div>
+  <div class="toast" id="toastNotification">設定已成功儲存！</div>
 
   <script>
-    // Profile State & Defaults
+    // Profile State & Defaults in Traditional Chinese
     const DEFAULT_PROFILE = {
       name: 'Tim Ko',
-      role: 'Creative Developer & Problem Solver',
-      bio: 'Passionate about building modern web applications, crafting intuitive digital experiences, and exploring emerging technologies. Welcome to my personal page and live portfolio.',
-      location: 'Taipei, Taiwan',
+      role: '全端開發者 & 數位體驗創造者',
+      bio: '熱衷於現代網頁技術開發、打造直覺流暢的數位體驗，並持續探索新興科技。歡迎來到我的個人主頁與即時作品集。',
+      location: '台灣 台北',
       email: 'timko1018@gmail.com'
     };
 
-    const STORAGE_KEY_PROFILE = 'personal_page_profile_v1';
-    const STORAGE_KEY_THEME = 'personal_page_theme_v1';
-    const STORAGE_KEY_FMT = 'personal_page_time_fmt_v1';
+    const STORAGE_KEY_PROFILE = 'personal_page_profile_zh_v2';
+    const STORAGE_KEY_THEME = 'personal_page_theme_v2';
+    const STORAGE_KEY_FMT = 'personal_page_time_fmt_v2';
 
     let userProfile = JSON.parse(localStorage.getItem(STORAGE_KEY_PROFILE)) || DEFAULT_PROFILE;
     let currentTheme = localStorage.getItem(STORAGE_KEY_THEME) || 'dark';
@@ -1244,8 +1245,8 @@
 
     // Render Profile Function
     function renderProfile() {
-      const name = userProfile.name || 'Your Name';
-      const initial = name.trim().charAt(0).toUpperCase() || 'U';
+      const name = userProfile.name || 'Tim Ko';
+      const initial = name.trim().charAt(0).toUpperCase() || 'T';
 
       brandNameDisplay.textContent = name;
       brandInitial.textContent = initial;
@@ -1257,7 +1258,7 @@
       displayEmail.textContent = userProfile.email || DEFAULT_PROFILE.email;
       displayLocation.textContent = userProfile.location || DEFAULT_PROFILE.location;
       detailLocation.textContent = userProfile.location || DEFAULT_PROFILE.location;
-      document.title = `${name} | Personal Page`;
+      document.title = `${name} | 個人主頁與即時時鐘`;
     }
 
     // Apply Theme
@@ -1300,12 +1301,13 @@
       updateClock();
     });
 
-    // Dynamic greeting calculation
+    // Dynamic greeting calculation in Traditional Chinese
     function getGreeting(hours) {
-      if (hours >= 5 && hours < 12) return 'Good morning';
-      if (hours >= 12 && hours < 17) return 'Good afternoon';
-      if (hours >= 17 && hours < 22) return 'Good evening';
-      return 'Good night';
+      if (hours >= 5 && hours < 11) return '早安';
+      if (hours >= 11 && hours < 14) return '午安';
+      if (hours >= 14 && hours < 18) return '下午好';
+      if (hours >= 18 && hours < 23) return '晚安';
+      return '夜深了，注意休息';
     }
 
     // Live Clock Engine
@@ -1315,19 +1317,19 @@
       const minutes = String(now.getMinutes()).padStart(2, '0');
       const seconds = String(now.getSeconds()).padStart(2, '0');
 
-      // Greeting
-      heroGreeting.textContent = `${getGreeting(hours24)}, welcome to my page`;
+      // Dynamic Greeting
+      heroGreeting.textContent = `${getGreeting(hours24)}，歡迎來到我的個人主頁`;
 
-      // 12h vs 24h
+      // 12H vs 24H
       if (timeFormat === '12') {
-        const ampm = hours24 >= 12 ? 'PM' : 'AM';
+        const ampm = hours24 >= 12 ? '下午' : '上午';
         const hours12 = hours24 % 12 || 12;
         const timeStr = `${String(hours12).padStart(2, '0')}:${minutes}:${seconds}`;
         heroTimeDigits.textContent = timeStr;
         heroAmPm.textContent = ampm;
         heroAmPm.style.display = 'inline';
-        navTimeDigits.textContent = `${timeStr} ${ampm}`;
-        footerTimeDigits.textContent = `${timeStr} ${ampm}`;
+        navTimeDigits.textContent = `${ampm} ${timeStr}`;
+        footerTimeDigits.textContent = `${ampm} ${timeStr}`;
       } else {
         const timeStr = `${String(hours24).padStart(2, '0')}:${minutes}:${seconds}`;
         heroTimeDigits.textContent = timeStr;
@@ -1337,10 +1339,14 @@
         footerTimeDigits.textContent = timeStr;
       }
 
-      // Date
-      const dateOpts = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-      heroDateDisplay.textContent = now.toLocaleDateString(undefined, dateOpts);
-      footerYear.textContent = now.getFullYear();
+      // Traditional Chinese Date formatting
+      const year = now.getFullYear();
+      const month = now.getMonth() + 1;
+      const date = now.getDate();
+      const days = ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'];
+      const dayName = days[now.getDay()];
+      heroDateDisplay.textContent = `${year}年${month}月${date}日 ${dayName}`;
+      footerYear.textContent = year;
 
       // Timezone
       try {
@@ -1350,7 +1356,7 @@
         const offsetHrs = Math.floor(Math.abs(offsetMin) / 60);
         detailTimezone.textContent = `${tz} (UTC${sign}${offsetHrs})`;
       } catch (e) {
-        detailTimezone.textContent = 'UTC';
+        detailTimezone.textContent = 'UTC+8';
       }
     }
 
@@ -1368,7 +1374,7 @@
       editProfileModal.classList.remove('active');
     }
 
-    function showToast(msg = 'Profile updated successfully!') {
+    function showToast(msg = '設定已成功儲存！') {
       toastNotification.textContent = msg;
       toastNotification.style.display = 'block';
       setTimeout(() => {
@@ -1395,7 +1401,7 @@
       localStorage.setItem(STORAGE_KEY_PROFILE, JSON.stringify(userProfile));
       renderProfile();
       closeModal();
-      showToast('Profile updated successfully!');
+      showToast('設定已成功儲存！');
     });
 
     btnResetProfile.addEventListener('click', () => {
@@ -1403,14 +1409,14 @@
       localStorage.setItem(STORAGE_KEY_PROFILE, JSON.stringify(userProfile));
       renderProfile();
       closeModal();
-      showToast('Reset to default values.');
+      showToast('已恢復為預設值。');
     });
 
     // Contact Form submission
     contactForm.addEventListener('submit', (e) => {
       e.preventDefault();
       const senderName = document.getElementById('formSenderName').value;
-      showToast(`Thank you, ${senderName}! Message simulated.`);
+      showToast(`感謝您的留言，${senderName}！已模擬送出訊息。`);
       contactForm.reset();
     });
 
